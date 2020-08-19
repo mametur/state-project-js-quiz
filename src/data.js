@@ -21,30 +21,30 @@ const state = {
   questions: [
     {
       text: "Who invented JavaScript?",
-      answers: {
-        a: "Brendan Eich",
-        b: "Sheryl Sandberg",
-        c: "Douglas Crockford"
-      },
-      correctAnswer: "a"
+      answers: [
+        "Brendan Eich",
+        "Sheryl Sandberg",
+        "Douglas Crockford"
+      ],
+      correctAnswer: 0
     },
     {
       text: "Which one of these is a JavaScript package manager?",
-      answers: {
-        a: "Node.js",
-        b: "TypeScript",
-        c: "npm"
-      },
-      correctAnswer: "c"
+      answers: [
+        "Node.js",
+        "TypeScript",
+        "npm"
+      ],
+      correctAnswer: 2
     },
     {
       text: "Which tool can you use to ensure code quality?",
-      answers: {
-        a: "Angular",
-        b: "jQuery",
-        c: "ESLint"
-      },
-      correctAnswer: "c"
+      answers: [
+        "Angular",
+        "jQuery",
+        "ESLint"
+      ],
+      correctAnswer: 2
     }
   ]
 };
