@@ -25,4 +25,27 @@ _A User can see my initial repository and live demo_
 - Start the development strategy
 - Prepare a project board
 - Push the changes to GitHub
-- Turn on GitHub Pages
+- Turn on GitHub Pages 
+
+## 1. HTMl&STYLE
+
+**As a site visitor, I want to see very a simple website so that I can understand how the website will looks like.**
+
+> assigned to Mamé
+
+### Repo
+
+This user story has been developed through a branch called 'style-1'.
+
+### HTML
+
+- add header and section semantic tags
+
+### CSS
+
+- add background img
+- align tags
+
+### javascript
+
+-Add event listener two show basic html

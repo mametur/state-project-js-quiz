@@ -20,45 +20,31 @@ const state = {
   // the questions in the quiz
   questions: [
     {
-      text: 'What are the different ways to declare a JS variable?',
-      answers: [
-        'constant, let, variable',
-        'var, const, let, function',
-        'var, let, const'
-      ],
-      correct: 2,
-      selected: -1,
-      links: [
-        {
-          text: 'javascript.info',
-          href: 'https://javascript.info/variables'
-        },
-        {
-          text: 'Tyler McGinnis',
-          href: 'https://ui.dev/var-let-const/'
-        },
-      ]
+      text: "Who invented JavaScript?",
+      answers: {
+        a: "Brendan Eich",
+        b: "Sheryl Sandberg",
+        c: "Douglas Crockford"
+      },
+      correctAnswer: "a"
     },
     {
-      text: 'What does `typeof` do?',
-      answers: [
-        'changes the type of a primitive value',
-        'returns a string describing the type of a value',
-        'determines if a value is primitive',
-        'can tell the difference between arrays and objects',
-      ],
-      correct: 1,
-      selected: -1,
-      links: [
-        {
-          text: 'javascript.info',
-          href: 'https://javascript.info/types#type-typeof'
-        },
-        {
-          text: 'MDN',
-          href: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof'
-        },
-      ]
+      text: "Which one of these is a JavaScript package manager?",
+      answers: {
+        a: "Node.js",
+        b: "TypeScript",
+        c: "npm"
+      },
+      correctAnswer: "c"
+    },
+    {
+      text: "Which tool can you use to ensure code quality?",
+      answers: {
+        a: "Angular",
+        b: "jQuery",
+        c: "ESLint"
+      },
+      correctAnswer: "c"
     }
   ]
 };

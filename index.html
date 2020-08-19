@@ -23,6 +23,7 @@
   <script src="./src/logic/starter.js"></script>
 
   <!--Handler-->
+  <script src="./src/handlers/start_button.js"></script>
   <script src="./src/handlers/starter.js"></script>
 
 
@@ -30,8 +31,43 @@
 </head>
 
 <body>
-
-
+  <header>
+    <h1>Welcome to JS Quiz</h1>
+  </header>
+  <section class="starter" id="starter">
+    <!--Start BUTTON-->
+    <button class="start_button" id="start_button">START</button>
+    <!--QUESTION-->
+  </section>
+  <div id="show">
+    <section class="main-section">
+      <article class="question">
+        <div>
+          <p>Who invented JavaScript?</p>
+        </div>
+      </article>
+      <!--ANSWERS-->
+      <article class="answers">
+        <div>
+          <p>A.<span>Brendan Eich</span></p>
+        </div>
+        <div>
+          <p>B.<span>Sheryl Sandberg</span></p>
+        </div>
+        <div>
+          <p>C.<span>Douglas Crockfordh</span></p>
+        </div>
+      </article>
+    </section>
+    <section class="score">
+      <div>score:<span> 0</span></div>
+    </section>
+    <section class="modify">
+      <div class="modify-buttons"><button>next</button></div>
+      <div class="modify-buttons"><button>Add a new question</button></div>
+      <div class="modify-buttons"><button>Remove this question</button></div>
+    </section>
+  </div>
 
   <!-- load listeners -->
   <script src="./src/listeners/starter.js"></script>
