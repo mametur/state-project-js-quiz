@@ -49,3 +49,26 @@ This user story has been developed through a branch called 'style-1'.
 ### javascript
 
 -Add event listener two show basic html
+
+## 2.Add New Questions
+
+**As a site visitor, I want to add a new question to the game  so that I can enjoy more playing quiz game.**
+
+> assigned to Mamé
+
+### Repo
+
+This user story has been developed through a branch called 'addQuestion'.
+
+### HTML
+
+- Added an id to add new question button
+
+### CSS
+
+- Nothing has changed
+
+### javascript
+
+- Add event listener two add button to add new question
+- Wrote a test for logic to add a new questions
