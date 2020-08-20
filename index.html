@@ -2,81 +2,83 @@
 <html lang='en'>
 
 <head>
-  <meta charset='utf8'>
-  <title>your project name</title>
+    <meta charset='utf8'>
+    <title>your project name</title>
 
-  <link href="./style.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
 
-  <!-- load the testing dependencies -->
-  <script src='./lib/chai.js'></script>
-  <script src='./lib/describe-it.js'></script>
+    <!-- load the testing dependencies -->
+    <script src='./lib/chai.js'></script>
+    <script src='./lib/describe-it.js'></script>
 
-  <!-- load the logging dependency -->
-  <script src='./lib/deep-clone.js'></script>
+    <!-- load the logging dependency -->
+    <script src='./lib/deep-clone.js'></script>
 
-  <!-- load src files -->
-  <script src='./src/data.js'></script>
-  <script src='./src/log.js'></script>
-  <script src='./src/init.js'></script>
+    <!-- load src files -->
+    <script src='./src/data.js'></script>
+    <script src='./src/log.js'></script>
+    <script src='./src/init.js'></script>
 
-  <!--Logic-->
-  <script src="./src/logic/starter.js"></script>
-  <script src="./src/logic/addQuestion.js"></script>
+    <!--Logic-->
+    <script src="./src/logic/starter.js"></script>
+    <script src="./src/logic/addQuestion.js"></script>
+    <script src="./src/logic/removeQuestion.js"></script>
 
-  <!--Handler-->
-  <script src="./src/handlers/start_button.js"></script>
-  <script src="./src/handlers/starter.js"></script>
-  <script src="./src/handlers/add_question.js"></script>
+    <!--Handler-->
+    <script src="./src/handlers/start_button.js"></script>
+    <script src="./src/handlers/starter.js"></script>
+    <script src="./src/handlers/add_question.js"></script>
+    <script src="./src/handlers/remove_question.js"></script>
 
 
 
 </head>
 
 <body>
-  <header>
-    <h1>Welcome to JS Quiz</h1>
-  </header>
-  <section class="starter" id="starter">
-    <!--Start BUTTON-->
-    <button class="start_button" id="start_button">START</button>
-    <!--QUESTION-->
-  </section>
-  <div id="show">
-    <section class="main-section">
-      <article class="question">
-        <div>
-          <p>Who invented JavaScript?</p>
-        </div>
-      </article>
-      <!--ANSWERS-->
-      <article class="answers">
-        <div>
-          <p>A.<span>Brendan Eich</span></p>
-        </div>
-        <div>
-          <p>B.<span>Sheryl Sandberg</span></p>
-        </div>
-        <div>
-          <p>C.<span>Douglas Crockfordh</span></p>
-        </div>
-      </article>
+    <header>
+        <h1>Welcome to JS Quiz</h1>
+    </header>
+    <section class="starter" id="starter">
+        <!--Start BUTTON-->
+        <button class="start_button" id="start_button">START</button>
+        <!--QUESTION-->
     </section>
-    <section class="score">
-      <div>score:<span> 0</span></div>
-    </section>
-    <section class="modify">
-      <div class="modify-buttons"><button>next</button></div>
-      <div class="modify-buttons"><button id="add">Add a new question</button></div>
-      <div class="modify-buttons"><button>Remove this question</button></div>
-    </section>
-  </div>
+    <div id="show">
+        <section class="main-section">
+            <article class="question">
+                <div>
+                    <p>Who invented JavaScript?</p>
+                </div>
+            </article>
+            <!--ANSWERS-->
+            <article class="answers">
+                <div>
+                    <p>A.<span>Brendan Eich</span></p>
+                </div>
+                <div>
+                    <p>B.<span>Sheryl Sandberg</span></p>
+                </div>
+                <div>
+                    <p>C.<span>Douglas Crockfordh</span></p>
+                </div>
+            </article>
+        </section>
+        <section class="score">
+            <div>score:<span> 0</span></div>
+        </section>
+        <section class="modify">
+            <div class="modify-buttons"><button>next</button></div>
+            <div class="modify-buttons"><button id="add">Add a new question</button></div>
+            <div class="modify-buttons"><button>Remove this question</button></div>
+        </section>
+    </div>
 
-  <!-- load listeners -->
-  <script src="./src/listeners/starter.js"></script>
+    <!-- load listeners -->
+    <script src="./src/listeners/starter.js"></script>
 
-  <!-- Leave this here, it renders the review buttons
+    <!-- Leave this here, it renders the review buttons
       write your code above this script tag  -->
-  <script src='./lib/review-buttons.js'></script>
+    <script src='./lib/review-buttons.js'></script>
 
 </body>
 
