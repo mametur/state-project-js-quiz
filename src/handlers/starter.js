@@ -1,10 +1,10 @@
-'use strict';
+// 'use strict';
 
-console.log('--- loading handler: _');
+// console.log('--- loading handler: _');
 
-const _ = (event) => {
+// const _ = (event) => {
 
-};
+// };
 
 /* handlers define user interactions
 
