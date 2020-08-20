@@ -67,9 +67,9 @@ const state = {
     {
       text: "Inside which element do you put JavaScript??",
       answers: [
-        "<script>",
-        "<code>",
-        "<const>"
+        "script",
+        "code",
+        "const"
       ],
       correctAnswer: 0
     },
