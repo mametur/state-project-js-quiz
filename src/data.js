@@ -45,6 +45,33 @@ const state = {
         "ESLint"
       ],
       correctAnswer: 2
-    }
+    },
+    {
+      text: "What is the alternate name for Java script?",
+      answers: [
+        "ECMScript",
+        "ECMAScript",
+        "LimeScript"
+      ],
+      correctAnswer: 1
+    },
+    {
+      text: "Which of the following is not a reserved word in JavaScript?",
+      answers: [
+        "interface",
+        "throws",
+        "program"
+      ],
+      correctAnswer: 2
+    },
+    {
+      text: "Inside which element do you put JavaScript??",
+      answers: [
+        "<script>",
+        "<code>",
+        "<const>"
+      ],
+      correctAnswer: 0
+    },
   ]
 };

@@ -72,3 +72,27 @@ This user story has been developed through a branch called 'addQuestion'.
 
 - Add event listener two add button to add new question
 - Wrote a test for logic to add a new questions
+
+## 4. Generate question
+
+**As a site visitor, I want to see every time a new question with related possible answers on it.**
+
+> assigned to Iryna
+
+### Repo
+
+This user story has been developed through a branch called 'getQuestion'.
+
+### HTML
+
+- Added an id and date-set to the buttons with answers
+
+### CSS
+
+- styled the buttons and questions 
+
+### javascript
+
+- Add event listeners to the `START` and `NEXT` buttons
+- Wrote handler `getNewQuestion`;
+
