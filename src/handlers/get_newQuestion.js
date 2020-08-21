@@ -18,7 +18,7 @@ function getNewQuestion() {
         btn.classList.remove('correct');
         btn.classList.remove('incorrect');
     });
-    if (availableQuesions.length < questionCounter) {
+    if (availableQuesions.length <= questionCounter) {
         finishTheGame.innerHTML = ``;
         finishTheGameSecond.innerHTML = `THANK YOU - YOU HAVE COMPLETED THIS QUIZ! 🙂`;
         finishTheGameSecond.classList.add('text', 'center');
