@@ -19,15 +19,24 @@ function removeQuestionHandler() {
         questionParagraph.style.fontStyle = 'italic';
 
         answers.forEach(item => item.remove());
+
         this.disabled = true;
 
     } else {
         questionParagraph.innerHTML = currentQuestion.text;
-        answers.forEach(item => item.remove());
+
+        questionParagraph.innerHTML = currentQuestion.text;
         currentQuestion.answers.forEach((item, index) => {
-            let div = document.createElement('div');
-            div.innerHTML = `<p>${index+1}.<span>${item}</span></p>`;
-            answerArticle.append(div);
-        })
+
+            answers[index].firstElementChild.innerHTML = item;
+
+        });
+
+        // answers.forEach(item => item.remove());
+        // currentQuestion.answers.forEach((item, index) => {
+        //     let div = document.createElement('div');
+        //     div.innerHTML = `<p>${index+1}.<span>${item}</span></p>`;
+        //     answerArticle.append(div);
     }
+
 }
