@@ -16,7 +16,7 @@ const addQuestion = (text, answerArray, correctAnswer) => {
 
     let newObject = {};
     newObject.text = text;
-    newObject.answersArray = [...answerArray];
+    newObject.answers = [...answerArray];
     newObject.correctAnswer = correctAnswer;
     return newObject;
 };
@@ -40,7 +40,7 @@ describe('Create a new question', () => {
     it('the number of answer choices is 3 in the multiple-choice question', () => {
 
         const actual = addQuestion('what is the capital of Belgium', ['Brussel', 'Paris', 'Antwerpen'], 0);
-        expect(actual).to.have.property('answersArray').with.lengthOf(3)
+        expect(actual).to.have.property('answers').with.lengthOf(3)
 
     });
     it('type of the correct answer is number', () => {
@@ -52,7 +52,7 @@ describe('Create a new question', () => {
     it('the answers is an array', () => {
 
         const actual = addQuestion('what is the capital of Belgium', ['Brussel', 'Paris', 'Antwerpen'], 0);
-        expect(actual.answersArray).to.be.a('array');
+        expect(actual.answers).to.be.a('array');
 
     });
 
