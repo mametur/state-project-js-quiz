@@ -2,7 +2,7 @@
 <html lang='en'>
 
 <head>
-  <meta charset='utf8'>
+  <meta charset="UTF-8">
   <title>your project name</title>
 
   <link href="./style.css" rel="stylesheet" />
@@ -38,28 +38,39 @@
     <h1>Welcome to JS Quiz</h1>
   </header>
   <section class="starter" id="starter">
+    <h2 class="invisible">Welcome</h2>
     <!--Start BUTTON-->
     <button class="start_button" id="start_button">START</button>
     <!--QUESTION-->
   </section>
   <div id="show">
     <section class="main-section">
+      <h2 class="invisible">Main</h2>
       <article class="question">
+        <h2 class="invisible">Question</h2>
         <div>
           <p class="text" id="question">Who invented JavaScript?</p>
         </div>
       </article>
       <!--ANSWERS-->
       <article class="answers">
-        <button id="btn" class="btn" data-number="0"><span>A</span></button>
-        <button id="btn" class="btn" data-number="1"><span>B</span></button>
-        <button id="btn" class="btn" data-number="2"><span>C</span></button>
+        <h2 class="invisible">Answers</h2>
+        <button class="btn" data-number="0"><span>A</span></button>
+        <button class="btn" data-number="1"><span>B</span></button>
+        <button class="btn" data-number="2"><span>C</span></button>
       </article>
+      <!-- Inform user if he chose the right answer or no-->
+      <div class="userInfo">
+        <p class = "text" id="userInfo"></p>
+      </div>
     </section>
+    <!-- SCORE -->
     <section class="score">
-      <div>score:<span> 0</span></div>
+      <h2 class="invisible">Score</h2>
+      <div>SCORE: <span id='score'> 0</span></div>
     </section>
     <section class="modify">
+      <h2 class="invisible">Modify</h2>
       <div class="modify-buttons"><button id ="next">next</button></div>
       <div class="modify-buttons"><button id="add">Add a new question</button></div>
       <div class="modify-buttons"><button>Remove this question</button></div>
@@ -74,6 +85,8 @@
   <script src='./lib/review-buttons.js'></script>
   <script src="./src/handlers/get_newQuestion.js"></script>
   <script src="./src/listeners/nex.js"></script>
+  <script src="./src/handlers/show_answers.js"></script>
+  <script src="./src/listeners/display_answers.js"></script>
 
 </body>
 
