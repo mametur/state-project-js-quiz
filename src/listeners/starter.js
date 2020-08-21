@@ -10,4 +10,5 @@ document.getElementById('start_button').addEventListener('click', startQuiz);
 
 /*Add Question */
 
-document.getElementById('add').addEventListener('click', addNewQuestions)
+document.getElementById('add').addEventListener('click', addNewQuestions);
+

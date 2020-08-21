@@ -7,6 +7,7 @@ function startQuiz() {
 
     document.getElementById('show').style.display = "block";
     document.getElementById('starter').style.display = 'none';
+    getNewQuestion();
 }
 
 

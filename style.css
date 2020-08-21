@@ -58,11 +58,68 @@ section.modify {
 .modify-buttons {
     margin-right: 10px;
 }
+
+.modify-buttons button{
+    padding: 10px;
+    color: white;
+    background-color: rgb(15, 80, 80);
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.modify-buttons button:focus{
+    outline: none;
+}
+/* SCORE */
 .score {
     position: absolute;
     top: 8%;
-    left: 22%;
+    left: 6%;
+    color: white;
+    background-color: rgb(17, 131, 131);
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 20px;
+    border-radius: 10px;
 }
+
+/* QUESTION AND USER INFO */
+.text {
+    display: inline-block;
+    text-align: center;
+    color: rgb(17, 131, 131);
+    font-size: 30px;
+    font-weight: bolder;
+    background-color: rgb(215, 238, 238);
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    width: fit-content;
+    text-transform: uppercase;
+}
+
+.text:empty{
+    padding: 0;
+}
+
+/* BUTTONS */
+.btn{
+    padding: 15px;
+    font-size: 24px;
+    color: white;
+    background-color: rgb(23, 163, 163);
+    border-radius: 10px;
+    border: none;
+    margin: 20px 50px;
+}
+.btn:focus, .btn:active{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
 
 /*Media query*/
 
