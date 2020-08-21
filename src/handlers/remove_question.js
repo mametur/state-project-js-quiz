@@ -12,7 +12,7 @@ function removeQuestionHandler() {
     const answers = answerArticle.querySelectorAll('div');
 
 
-    const currentQuestion = removeCurrentQuestion(questionParagraph.innerHTML);
+    const currentQuestion = removeCurrentQuestion(questionParagraph.innerHTML, state.questions);
 
     if (currentQuestion === null) {
         questionParagraph.innerHTML = "There are no questions at the moment. Add some by clicking 'Add new question' button";
@@ -32,11 +32,7 @@ function removeQuestionHandler() {
 
         });
 
-        // answers.forEach(item => item.remove());
-        // currentQuestion.answers.forEach((item, index) => {
-        //     let div = document.createElement('div');
-        //     div.innerHTML = `<p>${index+1}.<span>${item}</span></p>`;
-        //     answerArticle.append(div);
+
     }
 
 }
