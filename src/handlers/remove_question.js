@@ -9,7 +9,7 @@ function removeQuestionHandler() {
     const questionParagraph = questionArticle.querySelector('p');
 
     const answerArticle = document.getElementsByClassName("answers")[0];
-    const answers = answerArticle.querySelectorAll('div');
+    const answers = answerArticle.querySelectorAll('button');
 
 
     const currentQuestion = removeCurrentQuestion(questionParagraph.innerHTML, state.questions);
@@ -25,10 +25,10 @@ function removeQuestionHandler() {
     } else {
         questionParagraph.innerHTML = currentQuestion.text;
 
-        questionParagraph.innerHTML = currentQuestion.text;
         currentQuestion.answers.forEach((item, index) => {
 
-            answers[index].firstElementChild.innerHTML = item;
+            answers[index].classList.remove('incorrect');
+            answers[index].innerHTML = item;
 
         });
 

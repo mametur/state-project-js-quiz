@@ -16,3 +16,5 @@ document.getElementById('add').addEventListener('click', addNewQuestions);
 /*Remove question*/
 document.getElementById('remove').addEventListener('click', removeQuestionHandler);
 
+/*Cheat Button*/
+document.getElementById('cheat').addEventListener('click', cheatHandler);

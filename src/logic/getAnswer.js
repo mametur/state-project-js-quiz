@@ -1,14 +1,20 @@
-function getAnswer(question) {
+/**
+ * returns one random incorrect answers from the answers array
+ * @param {number} correctAnswer  - correct answer of the current question
+ * @param {string[]} answerArray - an array of answers to the current question
+ * @return {number} an index of incorrect answer
+ */
+function getAnswer(correctAnswer, answersArray) {
 
-    const questionArray = state.questions;
+    let res = 0;
 
-    const index = questionArray.findIndex((item) => item.text === currentQuestion);
-
-    if (index === -1) {
-        return null;
+    while (true) {
+        res = Math.floor(Math.random() * (answersArray.length - 1));
+        if (res !== correctAnswer) {
+            break;
+        }
     }
 
-    return questionArray[index].correctAnswer;
-
+    return res;
 
 }

@@ -1,6 +1,6 @@
-function cheatHandler(event) {
+function cheatHandler() {
 
-    const userInput = confirm('Do you want to get some hint?');
+    const userInput = confirm('Do you want to get some hint? One of the incorrect answers will be shown');
 
     if (!userInput) {
         return false;
@@ -9,12 +9,18 @@ function cheatHandler(event) {
     const questionArticle = document.getElementsByClassName("question")[0];
     const questionParagraph = questionArticle.querySelector('p');
 
-    if (getAnswer(questionParagraph.innerText) === null {
-            alert('Question is incorrect - no answer is set');
-            return;
-        }
+    const questionIndex = getCurrentQuestionIndex(questionParagraph.innerText, state.questions);
 
-        const answerArticle = document.getElementsByClassName("answers")[0];
-        const answers = answerArticle.querySelectorAll('div');
+    const res = getAnswer(state.questions[questionIndex].correctAnswer, state.questions[questionIndex].answers);
+
+    const answerArticle = document.getElementsByClassName("answers")[0];
+    const answersArray = [...answerArticle.querySelectorAll('button')];
+    const incorrectButton = answersArray.find(item => item.dataset.number == res);
+
+    if (incorrectButton !== undefined) {
+        answersArray.forEach(btn => btn.classList.remove('incorrect'));
+        incorrectButton.classList.add('incorrect');
 
     }
+
+}
