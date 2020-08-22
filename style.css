@@ -14,8 +14,13 @@ html,body {
 
 header {
     margin-top:50px;
-    text-align: center;
-    
+    text-align: center; 
+}
+
+header h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    color: rgb(15, 80, 80);
 }
 
 /*Start BUTTON*/
@@ -28,11 +33,6 @@ section.starter {
     width: 100%;
 }
 
-.start_button {
-
-    width: 25%;
-    height: 30px;
-}
 /*Main*/
 #show{
     display: none;
@@ -60,7 +60,8 @@ section.modify {
     margin-right: 10px;
 }
 
-.modify-buttons button{
+.modify-buttons button,
+.modify-buttons a{
     padding: 10px;
     color: white;
     background-color: rgb(15, 80, 80);
@@ -68,6 +69,11 @@ section.modify {
     border: none;
     font-size: 18px;
     text-transform: uppercase;
+    text-decoration: none;
+}
+
+.modify-buttons a {
+    display: inline-block;
 }
 
 .modify-buttons button:focus{
@@ -106,7 +112,8 @@ section.modify {
 }
 
 /* BUTTONS */
-.btn{
+.btn,
+.start_button{
     padding: 15px;
     font-size: 24px;
     color: white;
@@ -115,7 +122,8 @@ section.modify {
     border: none;
     margin: 20px 50px;
 }
-.btn:focus, .btn:active{
+.btn:focus, .btn:active,
+.start_button:focus{
     outline: none !important;
     box-shadow: none !important;
 }
