@@ -1,4 +1,4 @@
-function cheatHandler(event) {
+function cheatHandler() {
 
     const userInput = confirm('Do you want to get some hint?');
 
@@ -9,12 +9,13 @@ function cheatHandler(event) {
     const questionArticle = document.getElementsByClassName("question")[0];
     const questionParagraph = questionArticle.querySelector('p');
 
-    if (getAnswer(questionParagraph.innerText) === null {
-            alert('Question is incorrect - no answer is set');
-            return;
-        }
+    const questionIndex = getCurrentQuestionIndex(questionParagraph.innerText, state.questions);
 
-        const answerArticle = document.getElementsByClassName("answers")[0];
-        const answers = answerArticle.querySelectorAll('div');
+    const res = getAnswer(state.questions[questionIndex].correctAnswer, state.questions[questionIndex].answers);
 
-    }
+    alert(`One of the incorrest answers: ${res+1}`);
+
+    const answerArticle = document.getElementsByClassName("answers")[0];
+    const answers = answerArticle.querySelectorAll('div');
+
+}

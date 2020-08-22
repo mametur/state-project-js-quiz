@@ -143,3 +143,28 @@ This user story has been developed through a branch called 'Answers_Score'.
 
 - Add event listeners to the buttons with answers
 - Wrote handler `showAnswers`;
+
+## 6. Get a hint
+
+**As a site visitor, I can get a hint for the certain quiz question by pressing a `Cheat` button **
+
+> assigned to Pavel
+
+### Repo
+
+This user story has been developed through a branch called `cheating`
+'.
+
+### HTML
+
+- Added an appropriate `script` tags for handler and logic functions
+
+### CSS
+
+- Nothing has changed
+
+### javascript
+
+- Add event listener for `Cheat` button
+- Add appropriate handler and logic functions
+- Wrote a test for logic to add a new questions

@@ -1,9 +1,9 @@
 function removeCurrentQuestion(currentQuestion, questionArray) {
 
-    const index = questionArray.findIndex((item) => item.text === currentQuestion);
+    const index = getCurrentQuestionIndex(currentQuestion, questionArray);
 
-    if (index === -1) {
-        return null;
+    if (index === null) {
+        return index;
     }
 
     const nextQuestion = (questionArray.length > 1) ? questionArray[index + 1] : questionArray[index];

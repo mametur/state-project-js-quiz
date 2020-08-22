@@ -30,7 +30,3 @@ function addCheatButton() {
     const btnSection = document.getElementsByClassName('modify')[0];
     btnSection.appendChild(div);
 }
-
-function cheatHandler(event) {
-    console.log('Cheat........');
-}
