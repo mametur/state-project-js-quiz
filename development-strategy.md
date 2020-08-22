@@ -73,6 +73,31 @@ This user story has been developed through a branch called 'addQuestion'.
 - Add event listener two add button to add new question
 - Wrote a test for logic to add a new questions
 
+## 3. Remove current question from the quiz
+
+**As a site visitor, I can remove current question from the quiz so I can manage question list.**
+
+> assigned to Pavel
+
+### Repo
+
+This user story has been developed through a branch called 'remove-current-question'
+'.
+
+### HTML
+
+- Added an appropriate `script` tags for handler and logic functions
+
+### CSS
+
+- Nothing has changed
+
+### javascript
+
+- Add event listener for `Remove question` button
+- Add appropriate handler and logic functions
+- Wrote a test for logic to add a new questions
+
 ## 4. Generate question
 
 **As a site visitor, I want to see every time a new question with related possible answers on it.**
