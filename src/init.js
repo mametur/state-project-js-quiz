@@ -11,22 +11,4 @@ window.onload = () => {
     // this log will always
     console.log(log);
 
-    addCheatButton();
-
 };
-
-function addCheatButton() {
-    const div = document.createElement('div');
-    div.setAttribute('class', 'modify-buttons');
-
-    const btn = document.createElement('button');
-    btn.innerHTML = 'Cheat';
-    btn.setAttribute('id', 'cheat');
-
-    btn.addEventListener('click', cheatHandler);
-
-    div.appendChild(btn);
-
-    const btnSection = document.getElementsByClassName('modify')[0];
-    btnSection.appendChild(div);
-}
