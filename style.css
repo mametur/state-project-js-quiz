@@ -43,7 +43,8 @@ article.question {
     text-align: center;
     margin-bottom: 50px;
 }
-article.answers {
+article.answers,
+.userInfo {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
@@ -119,7 +120,28 @@ section.modify {
     box-shadow: none !important;
 }
 
+/* Correct and incorrect answers */
+.correct {
+    background-color: rgb(81, 153, 81);
+}
 
+.incorrect {
+    background-color: rgb(231, 57, 57);
+}
+
+/* centered */
+.center {
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: fit-content;
+}
+
+.invisible{
+    display: none;
+}
 
 /*Media query*/
 
