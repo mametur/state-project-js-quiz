@@ -55,7 +55,7 @@ function addNewQuestions() {
     // log new state
     logEntry.state = deepClone(state);
 
-
+    console.log(log);
 
 }
 

@@ -97,3 +97,49 @@ This user story has been developed through a branch called 'remove-current-quest
 - Add event listener for `Remove question` button
 - Add appropriate handler and logic functions
 - Wrote a test for logic to add a new questions
+
+## 4. Generate question
+
+**As a site visitor, I want to see every time a new question with related possible answers on it.**
+
+> assigned to Iryna
+
+### Repo
+
+This user story has been developed through a branch called 'getQuestion'.
+
+### HTML
+
+- Added an id and date-set to the buttons with answers
+
+### CSS
+
+- styled the buttons and questions 
+
+### javascript
+
+- Add event listeners to the `START` and `NEXT` buttons
+- Wrote handler `getNewQuestion`;
+
+## 5. Show correct answer and score
+
+**As a site visitor, I want to see either I chose the correct answer or no and i want to see my score.**
+
+> assigned to Iryna
+
+### Repo
+
+This user story has been developed through a branch called 'Answers_Score'.
+
+### HTML
+
+- Added a div fto display info for user
+
+### CSS
+
+- styled the output for the end of the game
+
+### javascript
+
+- Add event listeners to the buttons with answers
+- Wrote handler `showAnswers`;
