@@ -27,6 +27,7 @@ const state = {
         "Douglas Crockford"
       ],
       correctAnswer: 0
+      ,resource:"https://www.checkmarx.com/blog/javascript-history-infographic/"
     },
     {
       text: "Which one of these is a JavaScript package manager?",
@@ -36,6 +37,7 @@ const state = {
         "npm"
       ],
       correctAnswer: 2
+      ,resource:"https://firebearstudio.com/blog/the-best-javascript-package-managers.html"
     },
     {
       text: "Which tool can you use to ensure code quality?",
@@ -45,6 +47,8 @@ const state = {
         "ESLint"
       ],
       correctAnswer: 2
+      ,resource:"https://colorlib.com/wp/code-quality-tools/"
+
     },
     {
       text: "What is the alternate name for Java script?",
@@ -54,6 +58,8 @@ const state = {
         "LimeScript"
       ],
       correctAnswer: 1
+      ,resource:"https://medium.com/madhash/the-many-names-of-javascript-livescript-jscript-ecmascript-es6-and-not-still-java-568b584a91b5"
+
     },
     {
       text: "Which of the following is not a reserved word in JavaScript?",
@@ -63,6 +69,8 @@ const state = {
         "program"
       ],
       correctAnswer: 2
+      ,resource:"https://mathiasbynens.be/notes/javascript-identifiers"
+
     },
     {
       text: "Inside which element do you put JavaScript??",
@@ -72,6 +80,8 @@ const state = {
         "const"
       ],
       correctAnswer: 0
+      ,resource:"https://www.w3schools.com/js/js_whereto.asp"
+
     },
   ]
 };

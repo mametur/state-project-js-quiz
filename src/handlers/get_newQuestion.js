@@ -1,13 +1,14 @@
 'use strict';
 
 console.log('--- loading handler: get newQuestion.js');
-
+debugger;
+let tes=document.createElement('a');
 let questionCounter = 0;
 let availableQuesions = [];
 let currentQuestion = {};
 const question = document.querySelector('#question');
 const button = document.querySelectorAll('#btn');
-
+const aEl=document.getElementById('learn-more');
 
 
 function getNewQuestion() {
@@ -20,6 +21,7 @@ function getNewQuestion() {
     button.forEach(button => {
     const number = button.dataset["number"];
     button.innerHTML = currentQuestion.answers[number];
+    aEl.href=currentQuestion.resource;
     });
     questionCounter++; 
 };
