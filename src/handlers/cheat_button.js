@@ -18,6 +18,7 @@ function cheatHandler() {
     const incorrectButton = answersArray.find(item => item.dataset.number == res);
 
     if (incorrectButton !== undefined) {
+        answersArray.forEach(btn => btn.classList.remove('incorrect'));
         incorrectButton.classList.add('incorrect');
 
     }
