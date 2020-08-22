@@ -1,6 +1,6 @@
 function cheatHandler() {
 
-    const userInput = confirm('Do you want to get some hint?');
+    const userInput = confirm('Do you want to get some hint? One of the incorrect answers will be shown');
 
     if (!userInput) {
         return false;
@@ -13,9 +13,13 @@ function cheatHandler() {
 
     const res = getAnswer(state.questions[questionIndex].correctAnswer, state.questions[questionIndex].answers);
 
-    alert(`One of the incorrest answers: ${res+1}`);
-
     const answerArticle = document.getElementsByClassName("answers")[0];
-    const answers = answerArticle.querySelectorAll('div');
+    const answersArray = [...answerArticle.querySelectorAll('button')];
+    const incorrectButton = answersArray.find(item => item.dataset.number == res);
+
+    if (incorrectButton !== undefined) {
+        incorrectButton.classList.add('incorrect');
+
+    }
 
 }
