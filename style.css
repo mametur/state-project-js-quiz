@@ -7,7 +7,12 @@
 html,body {
   
     width: 100vw;
+    height: 100vh;
     background-color: azure;
+    background-image: url(./src/img/quiz_background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /*Header*/
@@ -20,7 +25,7 @@ header {
 header h1 {
     font-size: 50px;
     font-weight: bolder;
-    color: rgb(15, 80, 80);
+    color: #ffffff;
 }
 
 /*Start BUTTON*/

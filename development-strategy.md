@@ -8,7 +8,7 @@ Each step of the project has done in the collaboration. In this project main foc
 
 ## Wireframe
 
-![wireframe](./images/js_15.png)
+![wireframe](./src/img/wireframequiz.png)
 
 ## 0. Set-Up
 
