@@ -7,7 +7,6 @@ let questionCounter = 0;
 let availableQuesions = state.questions;
 let currentQuestion = {};
 const question = document.querySelector('#question');
-//const button = document.querySelectorAll('#btn');
 const aEl = document.getElementById('learn-more');
 const button = document.querySelectorAll('.btn');
 const finishTheGame = document.querySelector('.main-section');
@@ -41,5 +40,4 @@ function getNewQuestion() {
 
         aEl.target = '_blank';
     });
-    questionCounter++;
 };

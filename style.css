@@ -5,10 +5,9 @@
 }
 
 html,body {
-  
     width: 100vw;
     height: 100vh;
-    background-color: azure;
+    /* background-color: azure; */
     background-image: url(./src/img/quiz_background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -18,14 +17,21 @@ html,body {
 /*Header*/
 
 header {
+    display: flex;
     margin-top:50px;
+    justify-content: center;
     text-align: center; 
+    
 }
 
 header h1 {
-    font-size: 50px;
+    font-size: 70px;
     font-weight: bolder;
-    color: #ffffff;
+    color: rgb(23, 163, 163);
+    background-color: rgba(255, 255, 255, 0.8);
+    width: max-content;
+    padding: 25px;
+    border-radius: 10px;
 }
 
 /*Start BUTTON*/
@@ -44,7 +50,7 @@ section.starter {
 }
 
 article.question {
-    margin-top: 30px;
+    margin-top: 100px;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -117,12 +123,22 @@ section.modify {
 }
 
 /* BUTTONS */
-.btn,
-.start_button{
+.btn{
     padding: 15px;
     font-size: 24px;
     color: white;
     background-color: rgb(23, 163, 163);
+    border-radius: 10px;
+    border: none;
+    margin: 20px 50px;
+}
+
+.start_button{
+    padding: 20px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(23, 163, 163);
+    background-color: white;
     border-radius: 10px;
     border: none;
     margin: 20px 50px;
